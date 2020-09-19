@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.header{
+  height: 600px;
+  background-position: center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  position: relative;
+
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

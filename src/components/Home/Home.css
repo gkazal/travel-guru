@@ -1,0 +1,22 @@
+.img{
+    width: 250px;
+    height: 300px;
+    /* object-fit: cover; */
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+
+}
+.card{
+    display: flex;
+}
+.main-button{
+    background-color: rgb(241, 181, 30);
+    width: 80px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}

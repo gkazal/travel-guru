@@ -1,0 +1,29 @@
+.form {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    /* margin: auto; */
+    
+}
+.form input{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.destination{
+    color: white;
+}
+
+.main-button{
+    background-color: rgb(241, 181, 30);
+    width: 80px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
