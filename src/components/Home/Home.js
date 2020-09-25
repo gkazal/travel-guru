@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import React, { useState } from 'react';
 import './Home.css'
-import fakeData from '../fake data/Info';
 import Destination from '../Destination/Destination';
-import { createContext } from 'react';
-import { useContext } from 'react';
-import { CategoryContext } from '../../App';
+
 import homePageFakeData from '../fake data/HomeFakedata';
 
 

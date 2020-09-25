@@ -1,10 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import './Destination.css'
 
-import { Button, Card, CardDeck, CardGroup, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card} from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-import { CategoryContext } from '../../App';
-import { Grid } from '@material-ui/core';
 
 
 const Destination = (props) => {
@@ -12,11 +10,6 @@ const Destination = (props) => {
     const { category, img, description } = props.product
 
     console.log(category, description)
-
-    // const [view, setView] = useContext(CategoryContext)
-    // setView(props.product)
-    // console.log(view)
-
 
     const cardStyle = {
         //width: '18rem',
@@ -44,8 +37,6 @@ const Destination = (props) => {
                 <Button onClick={() => handleBook(category)} variant="warning">Booking</Button>
             </Card.Body>
         </Card>
-
-
     );
 };
 

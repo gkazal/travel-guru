@@ -4,24 +4,13 @@ import { Button, Card, Col, Container, Input, FormGroup, Row, Form } from 'react
 import './Booking.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useHistory, useParams } from 'react-router-dom';
-import { CategoryContext } from '../../App';
 import fakeData from '../fake data/Info';
 
 
 
 const Booking = () => {
 
-    const [name, setNames] = useContext(CategoryContext)
-
-    const [data,fakedata] = useState(fakeData)
-    //console.log(data)
-
     const { category} = useParams()
-    // useparams theke category k nia fake data thke filter kore category r description k show korano jabe....
-
-    setNames(category)
-
-    //console.log(name.category)
 
     const history = useHistory(category)
     const handleBook = (category) => {
