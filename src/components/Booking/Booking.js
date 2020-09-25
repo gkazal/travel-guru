@@ -1,22 +1,41 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 
 import { Button, Card, Col, Container, Input, FormGroup, Row, Form } from 'react-bootstrap';
 import './Booking.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useHistory, useParams } from 'react-router-dom';
+import { CategoryContext } from '../../App';
+import fakeData from '../fake data/Info';
 
 
 
 const Booking = () => {
+
+    const [name, setNames] = useContext(CategoryContext)
+
+    const [data,fakedata] = useState(fakeData)
+    //console.log(data)
+
+    const { category} = useParams()
+    // useparams theke category k nia fake data thke filter kore category r description k show korano jabe....
+
+    setNames(category)
+
+    //console.log(name.category)
+
+    const history = useHistory(category)
+    const handleBook = (category) => {
+        history.push(`/search/${category}`)
+    }
 
     return (
         <Container>
             <Row style={{ marginTop: '80px' }}>
                 <Col className="destination" >
                     <Card.Body>
-                        <Card.Title style={{fontSize:'60px'}}>Card Title</Card.Title>
+                        <Card.Title style={{ fontSize: '60px' }}>{category}</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                          {category}  Best Place for visit your dream destination
                         </Card.Text>
                     </Card.Body>
 
@@ -52,8 +71,8 @@ const Booking = () => {
                             </Col>
                         </Row>
 
-                        <Button style={{marginLeft:'5px'}} variant="warning" size="md" block>
-                            Submit
+                        <Button onClick={() => handleBook(category)} style={{ marginLeft: '5px' }} variant="warning" size="md" block>
+                            Booking
                         </Button>
                     </Form>
 

@@ -1,13 +1,16 @@
 import { Button, Form } from 'react-bootstrap';
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/image (3).png';
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { CategoryContext } from '../../App';
+import SearchPlace from '../SearchPlace/SearchPlace';
 
 
 const Header = () => {
+    const [loggedInUser] = useContext(CategoryContext)
     return (
         <div >
             <nav className="nav">
@@ -19,16 +22,24 @@ const Header = () => {
                         <Link to="/booking">News</Link>
                     </li>
                     <li>
-                        <Link to="/destination">Destination</Link>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link className="btn-book" to="/createAccount">Blog</Link>
+                        <Link to="/destination">Destination</Link>
                     </li>
+                    
                     <li>
                         <Link to="/login">Contact</Link>
                     </li>
                     <li>
+                        <Link to ='/searchPlace'>Search</Link>
+                    </li>
+                    <li>
                         <Button variant="warning">Login</Button>
+                    </li>
+                   
+                    <li style={{color:'white'}}>
+                        {loggedInUser.email}
                     </li>
                 </ul>
             </nav>

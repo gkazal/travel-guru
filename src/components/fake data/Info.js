@@ -2,6 +2,9 @@ var data = [
     {
         'id': 1,
         'category': 'Sundarbon',
+        'unique':'Home',
+        'img': 'https://img.techpowerup.org/200921/sundarbon.png',
+
         'title': 'Best room for stay',
         'description': 'Best places for to find the destination of your dream',
         'price': 50,
@@ -26,6 +29,8 @@ var data = [
     {
         'id': 4,
         'category': 'Sreemongal',
+        'unique':'Home',
+        'img': 'https://img.techpowerup.org/200921/sreemongal.png',
         'title': 'Best room for stay',
         'description': 'Best places for to find the destination of your dream',
         'price': 70,
@@ -51,6 +56,8 @@ var data = [
     {
         'id': 7,
         'category': 'Coxs-bazar',
+        'unique':'Home',
+        'img': 'https://img.techpowerup.org/200921/sun.png',
         'title': 'Best room for stay',
         'description': 'Best places for to find the destination of your dream',
         'price': 44,
