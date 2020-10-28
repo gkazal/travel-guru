@@ -23,6 +23,7 @@ This project created for those people who wants to be travelling and search hete
 * JAVASCRIPT
 * REACT JS
 * FIREBASE AUTHENTICATION
+* NETLIFY
 
 
 
